@@ -8,11 +8,13 @@ import styles from "./Typography.module.css"
 interface ITypography extends PropsWithChildren<DetailedHTMLProps<HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>> {
 	font?: NextFont
 	color?: string
+	fontWeight? : 500 | 400
 }
 
 const Typography: React.FC<ITypography> = ({children, font = InterFontCyrillic, ...props}) => {
 	const TypographyStyles = {
-		color: props.color
+		color: props.color,
+		fontWeight: props.fontWeight,
 	}
 
 	return (
