@@ -3,26 +3,30 @@
 import Button from "@/components/Button";
 import Input from "@/components/Input";
 import Typography from "@/components/Typography";
+import Header from "@/layout/Header";
 import React from "react";
 
 export default function Home() {
 	const [value, setValue] = React.useState('');
 	return (
-		<main>
-			<h1>Yoldi test app</h1>
-			<Typography color="red">Привет</Typography>
-			<input value={value} onChange={e => setValue(e.target.value)}/>
-			<Button>hello</Button>
-			<Button disabled>hello</Button>
-			<Button buttonType="primary">hello</Button>
-			<Button buttonType="primary" disabled>hello</Button>
-			<Button RightIcon={Svg} LeftIcon={Svg}>hello</Button>
-			<Input placeholder="hello"/>
-			<Input disabled placeholder="hello"/>
-			<Input RightIcon={Svg} LeftIcon={Svg} disabled placeholder="hello"/>
-			<Input LeftIcon={Svg} error placeholder="hello"/>
-			<Input RightIcon={Svg} LeftIcon={Svg} error placeholder="hello"/>
-		</main>
+		<div>
+			<Header/>
+			<main>	
+				<h1>Yoldi test app</h1>
+				<Typography color="red">Привет</Typography>
+				<input value={value} onChange={e => setValue(e.target.value)}/>
+				<Button>hello</Button>
+				<Button disabled>hello</Button>
+				<Button buttonType="primary">hello</Button>
+				<Button buttonType="primary" disabled>hello</Button>
+				<Button RightIcon={Svg} LeftIcon={Svg}>hello</Button>
+				<Input placeholder="hello"/>
+				<Input disabled placeholder="hello"/>
+				<Input RightIcon={Svg} LeftIcon={Svg} disabled placeholder="hello"/>
+				<Input LeftIcon={Svg} error placeholder="hello"/>
+				<Input RightIcon={Svg} LeftIcon={Svg} error placeholder="hello"/>
+			</main>
+		</div>
 	)
 }
 

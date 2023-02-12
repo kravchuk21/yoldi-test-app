@@ -9,11 +9,11 @@ interface IButton extends PropsWithChildren<DetailedHTMLProps<ButtonHTMLAttribut
 	RightIcon?: React.ComponentType<SVGProps<SVGElement>>
 }
 
-const Button: React.FC<IButton> = ({ children, buttonType = 'secondary', LeftIcon, RightIcon, ...props }) => {
-	const className = buttonType
+const Button: React.FC<IButton> = ({ children, buttonType = 'secondary', LeftIcon, RightIcon, className, ...props }) => {
+	const classNameByType = buttonType
 
 	return (
-		<button className={cn(styles.button, styles[className])} {...props}>
+		<button className={cn(styles.button, styles[classNameByType], className)} {...props}>
 			{LeftIcon && <LeftIcon/>}
 			<Typography fontWeight={500}>{children}</Typography>
 			{RightIcon && <RightIcon/>}
