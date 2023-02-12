@@ -1,6 +1,7 @@
 "use client"
 
 import Button from "@/components/Button";
+import Input from "@/components/Input";
 import Typography from "@/components/Typography";
 import React from "react";
 
@@ -16,6 +17,11 @@ export default function Home() {
 			<Button buttonType="primary">hello</Button>
 			<Button buttonType="primary" disabled>hello</Button>
 			<Button RightIcon={Svg} LeftIcon={Svg}>hello</Button>
+			<Input placeholder="hello"/>
+			<Input disabled placeholder="hello"/>
+			<Input RightIcon={Svg} LeftIcon={Svg} disabled placeholder="hello"/>
+			<Input LeftIcon={Svg} error placeholder="hello"/>
+			<Input RightIcon={Svg} LeftIcon={Svg} error placeholder="hello"/>
 		</main>
 	)
 }
