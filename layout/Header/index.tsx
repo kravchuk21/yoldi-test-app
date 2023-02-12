@@ -1,4 +1,4 @@
-import {memo} from "react"
+import { memo } from "react"
 import Button from "@/components/Button"
 import Typography from "@/components/Typography"
 import Logo from "@/public/assets/icons/logo.svg"
@@ -9,7 +9,7 @@ const Header: React.FC = () => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.logoBlock}>
-				<Image src={Logo.src} height={Logo.height} width={Logo.width} alt="Yoldi logo"/> 
+				<Image src={Logo.src} height={Logo.height} width={Logo.width} alt="Yoldi logo" />
 				<Typography className={styles.logoText}>
 					<span>Разрабатываем и запускаем</span>
 					<span>сложные веб проекты</span>

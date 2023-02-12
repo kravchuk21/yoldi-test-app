@@ -3,6 +3,7 @@
 import Button from "@/components/Button";
 import Input from "@/components/Input";
 import Typography from "@/components/Typography";
+import AuthFooter from "@/layout/auth/Footer";
 import Header from "@/layout/Header";
 import React from "react";
 
@@ -25,6 +26,7 @@ export default function Home() {
 				<Input RightIcon={Svg} LeftIcon={Svg} disabled placeholder="hello"/>
 				<Input LeftIcon={Svg} error placeholder="hello"/>
 				<Input RightIcon={Svg} LeftIcon={Svg} error placeholder="hello"/>
+				<AuthFooter title="Еще нет аккаунта?" link={{title: "Зарегистрироваться", path: "#"}}/>
 			</main>
 		</div>
 	)
