@@ -5,15 +5,12 @@ import Button from "@/components/Button";
 import Input from "@/components/Input";
 import Typography from "@/components/Typography";
 import AuthFooter from "@/layout/auth/Footer";
-import Header from "@/layout/Header";
 import React from "react";
 
 export default function Home() {
 	const [value, setValue] = React.useState('');
 	return (
 		<div>
-			<Header/>
-			<main>	
 				<h1>Yoldi test app</h1>
 				<Typography color="red">Привет</Typography>
 				<input value={value} onChange={e => setValue(e.target.value)}/>
@@ -32,7 +29,6 @@ export default function Home() {
 				<Avatar fullName="Владислав" size="large" image={"https://yoldi.agency/static/assets/yoldi-social.jpg"}/>
 				<Avatar fullName="Владислав" size="large" image={null}/>
 				<AuthFooter title="Еще нет аккаунта?" link={{title: "Зарегистрироваться", path: "#"}}/>
-			</main>
 		</div>
 	)
 }

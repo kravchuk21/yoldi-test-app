@@ -2,14 +2,14 @@ import { Routes } from "@/constants/routes"
 import AuthFooter from "@/layout/auth/Footer"
 import styles from "@/styles/Auth.module.css"
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return <div className={styles.authPage}>
 		<main className={styles.authContent}>
-		  Login, Next.js!
+		  Register, Next.js!
 		</main>
-		<AuthFooter	title="Еще нет аккаунта?" link={{
-			path: Routes.REGISTER,
-			title: "Зарегистрироваться"
+		<AuthFooter	title="Уже есть аккаунт?" link={{
+			path: Routes.LOGIN,
+			title: "Войти"
 		}} />	
 	</div>;
 }
