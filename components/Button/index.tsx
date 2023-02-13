@@ -7,13 +7,14 @@ interface IButton extends PropsWithChildren<DetailedHTMLProps<ButtonHTMLAttribut
 	buttonType?: 'primary' | 'secondary'
 	LeftIcon?: React.ComponentType<SVGProps<SVGElement>> 
 	RightIcon?: React.ComponentType<SVGProps<SVGElement>>
+	fullWidth?: boolean
 }
 
-const Button: React.FC<IButton> = ({ children, buttonType = 'secondary', LeftIcon, RightIcon, className, ...props }) => {
+const Button: React.FC<IButton> = ({ fullWidth = false, children, buttonType = 'secondary', LeftIcon, RightIcon, className, ...props }) => {
 	const classNameByType = buttonType
 
 	return (
-		<button className={cn(styles.button, styles[classNameByType], className)} {...props}>
+		<button className={cn(styles.button, styles[classNameByType], {[styles.fullWidth]: fullWidth}, className)} {...props}>
 			{LeftIcon && <LeftIcon/>}
 			<Typography fontWeight={500}>{children}</Typography>
 			{RightIcon && <RightIcon/>}

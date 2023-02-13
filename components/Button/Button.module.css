@@ -9,6 +9,10 @@
 	gap: 10px;
 }
 
+.button.fullWidth {
+	width: 100%;
+}
+
 .button svg {
 	height: 25px;
 	width: 25px;

@@ -1,3 +1,5 @@
+import Button from "@/components/Button";
+import Title from "@/components/Title";
 import { Routes } from "@/constants/routes"
 import AuthFooter from "@/layout/auth/Footer"
 import AuthFormBlock from "@/layout/auth/Form";
@@ -20,7 +22,8 @@ const LoginForm = () => {
 	return (
 		<AuthFormBlock>
 			<form>
-				form
+				<Title>Вход в Yoldi Agency</Title>
+				<Button buttonType="primary" fullWidth disabled>Войти</Button>
 			</form>
 		</AuthFormBlock>
 	)
