@@ -1,5 +1,6 @@
 "use client"
 
+import Avatar from "@/components/Avatar";
 import Button from "@/components/Button";
 import Input from "@/components/Input";
 import Typography from "@/components/Typography";
@@ -26,6 +27,10 @@ export default function Home() {
 				<Input RightIcon={Svg} LeftIcon={Svg} disabled placeholder="hello"/>
 				<Input LeftIcon={Svg} error placeholder="hello"/>
 				<Input RightIcon={Svg} LeftIcon={Svg} error placeholder="hello"/>
+				<Avatar fullName="Владислав" size="small" image={null}/>
+				<Avatar fullName="Владислав" image={"https://yoldi.agency/static/assets/yoldi-social.jpg"}/>
+				<Avatar fullName="Владислав" size="large" image={"https://yoldi.agency/static/assets/yoldi-social.jpg"}/>
+				<Avatar fullName="Владислав" size="large" image={null}/>
 				<AuthFooter title="Еще нет аккаунта?" link={{title: "Зарегистрироваться", path: "#"}}/>
 			</main>
 		</div>
