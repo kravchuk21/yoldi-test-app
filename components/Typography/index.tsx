@@ -1,3 +1,5 @@
+"use client"
+
 import { DetailedHTMLProps, HTMLAttributes, PropsWithChildren, memo } from "react"
 import cn from "classnames"
 

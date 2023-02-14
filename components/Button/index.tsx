@@ -1,3 +1,5 @@
+"use client"
+
 import { memo, ButtonHTMLAttributes, DetailedHTMLProps, PropsWithChildren, SVGProps } from "react"
 import cn from "classnames"
 import styles from "./Button.module.css"

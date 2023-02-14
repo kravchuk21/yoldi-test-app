@@ -25,6 +25,20 @@
 	border-radius: 5px;
 }
 
+.authFormTitle {
+	margin-bottom: 25px;
+}
+
+.authFormButton {
+	margin-top: 10px;
+}
+
+.authForm {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
 @media only screen and (max-width: 480px) {
 	.authContent {
 		padding: 0;
