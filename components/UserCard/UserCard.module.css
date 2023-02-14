@@ -1,0 +1,23 @@
+.userCard {
+	display: flex;
+}
+
+.userCardInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+	margin-left: 20px;
+	flex-wrap: wrap;
+}
+
+.userCardInfoName {
+	color: var(--typography);
+	font-weight: 500;
+}
+
+.userCardInfoEmail {
+	color: var(--gray);
+}
+
+
