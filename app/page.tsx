@@ -1,5 +1,3 @@
-"use client"
-
 import Title from "@/components/Title"
 import UserCard from "@/components/UserCard"
 
