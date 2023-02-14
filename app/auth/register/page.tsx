@@ -9,7 +9,7 @@ export default function RegisterPage() {
 	return <div className={styles.authPage}>
 		<main className={styles.authContent}>
 			<AuthFormBlock>
-				<Title className={styles.authFormTitle}>Регистрация в Yoldi Agency</Title>
+				<Title>Регистрация в Yoldi Agency</Title>
 				<RegisterForm/>
 			</AuthFormBlock>
 		</main>

@@ -1,5 +1,7 @@
 .userCard {
 	display: flex;
+	padding: 10px 0;
+	border-bottom: 1px solid var(--stroke-secondary);
 }
 
 .userCardInfo {

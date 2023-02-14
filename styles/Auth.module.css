@@ -25,16 +25,13 @@
 	border-radius: 5px;
 }
 
-.authFormTitle {
-	margin-bottom: 25px;
-}
-
 .authFormButton {
 	margin-top: 10px;
 }
 
 .authForm {
 	display: flex;
+	margin-top: 25px;
 	flex-direction: column;
 	gap: 15px;
 }

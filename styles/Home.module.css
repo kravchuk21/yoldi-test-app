@@ -1,0 +1,19 @@
+.userListPage {
+	max-width: 1280px;
+	padding: 0 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.userListTitle {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.userList {
+	border-top: 1px solid var(--stroke-secondary);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 50px;
+}

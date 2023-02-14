@@ -9,7 +9,7 @@ export default function LoginPage() {
 	return <div className={styles.authPage}>
 		<main className={styles.authContent}>
 			<AuthFormBlock>
-				<Title className={styles.authFormTitle}>Вход в Yoldi Agency</Title>
+				<Title>Вход в Yoldi Agency</Title>
 				<LoginForm/>
 			</AuthFormBlock>
 		</main>
