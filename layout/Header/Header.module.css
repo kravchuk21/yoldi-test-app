@@ -1,0 +1,31 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 20px;
+	background: var(--background-primary);
+	border-bottom: 1px solid var(--stroke-secondary);
+	align-items: center;
+}
+
+.logoBlock {
+	display: flex;
+	gap: 20px;
+}
+
+.loginButton {
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.logoText {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	line-height: 1;
+}
+
+@media only screen and (max-width: 576px) {
+	.logoText {
+		display: none;
+	}
+}

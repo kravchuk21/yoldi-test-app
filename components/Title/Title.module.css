@@ -1,0 +1,9 @@
+.title {
+	color: var(--typography);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 140%;
+	margin: 0;
+	padding: 0;
+}

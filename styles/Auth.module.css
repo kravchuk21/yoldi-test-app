@@ -1,0 +1,50 @@
+.authPage {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.authContent {
+	flex: 1;
+	background: var(--background-secondary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.authFormBlock {
+	max-width: 400px;
+	width: 100%;
+	background: var(--background-primary);
+	padding: 30px;
+	border-width: 1px;
+	border-color: var(--stroke-secondary);
+	border-style: solid;
+	border-radius: 5px;
+}
+
+.authFormButton {
+	margin-top: 10px;
+}
+
+.authForm {
+	display: flex;
+	margin-top: 25px;
+	flex-direction: column;
+	gap: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+	.authContent {
+		padding: 0;
+	}
+
+	.authFormBlock {
+		border: none;
+		border-radius: 0;
+		max-width: 100%;
+		height: 100%;
+	}
+}

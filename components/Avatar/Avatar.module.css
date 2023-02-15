@@ -1,0 +1,31 @@
+.avatar {
+	--size: 50px;
+
+	border-radius: 50%;
+	overflow: hidden;
+	border: 1px solid var(--stroke-secondary);
+	background: var(--background-secondary);
+	height: var(--size);
+	width: var(--size);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatarImage {
+	object-fit: cover;
+}
+
+.avatarTitle {
+	line-height: 1;
+	color: var(--typography);
+	font-size: 18px;
+}
+
+.avatar.large {
+	--size: 100px;
+}
+
+.avatar.large .avatarTitle {
+	font-size: 36px;
+}

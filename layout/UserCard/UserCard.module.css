@@ -1,0 +1,25 @@
+.userCard {
+	display: flex;
+	padding: 10px 0;
+	border-bottom: 1px solid var(--stroke-secondary);
+}
+
+.userCardInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+	margin-left: 20px;
+	flex-wrap: wrap;
+}
+
+.userCardInfoName {
+	color: var(--typography);
+	font-weight: 500;
+}
+
+.userCardInfoEmail {
+	color: var(--gray);
+}
+
+

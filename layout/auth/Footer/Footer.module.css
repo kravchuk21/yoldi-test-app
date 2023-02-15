@@ -1,0 +1,21 @@
+.footer {
+	padding: 20px;
+	background: var(--background-primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid var(--stroke-secondary);
+} 
+
+.footerTitle {
+	color: var(--gray);
+}
+
+.footerLink {
+	color: var(--typography);
+	text-decoration: none;
+}
+
+.footerLink:hover {
+	text-decoration: underline;
+}
