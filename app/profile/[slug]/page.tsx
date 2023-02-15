@@ -1,19 +1,16 @@
 "use client"
 
-import Avatar from "@/components/Avatar"
 import Button from "@/components/Button"
 import Title from "@/components/Title"
 import Typography from "@/components/Typography"
 import styles from "@/styles/Profile.module.css"
 import Link from "next/link"
 import LogoutIcon from "@/public/assets/icons/logout.svg"
-import ImageIcon from "@/public/assets/icons/image.svg"
-import TrashIcon from "@/public/assets/icons/trash.svg"
-import CameraIcon from "@/public/assets/icons/camera.svg"
-import useHover from "@/hooks/useHover"
 import EditProfileModal from "@/layout/EditProfileModal"
+import ProfileCover from "./ProfileCover"
+import ProfileAvatar from "./ProfileAvatar"
 
-export default function Profile({params}) {
+export default function Profile() {
 	return <div>
 		<ProfileCover/>
 		<main className={styles.profileContent}>
@@ -38,26 +35,3 @@ export default function Profile({params}) {
 	</div>
 }
 
-const ProfileAvatar = () => {
-	const [avatarRef, avatarHovered] = useHover<HTMLDivElement>();
-
-	return (
-		<div ref={avatarRef}>
-			{avatarHovered 
-				? <button className={styles.changeAvatarButton}><CameraIcon/></button>
-				: <Avatar size="large" fullName="Владислав"/>
-			}
-		</div>
-	)
-}
-
-const ProfileCover = () => {
-	const [coverRef, coverHovered] = useHover<HTMLDivElement>();
-
-	return (
-		<div className={styles.profileCover} ref={coverRef}>
-			<img src="https://yoldi.agency/_next/static/media/roadmap.88364db1.svg" alt="Владислав cover profile page"/>
-			{ coverHovered && <Button LeftIcon={TrashIcon} RightIcon={ImageIcon} className={styles.changeCoverButton}>Удалить</Button>}
-		</div>
-	)
-}

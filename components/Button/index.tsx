@@ -19,13 +19,12 @@ const Button: React.FC<IButton> = ({ fullWidth = false, children, buttonType = '
 
 	return (
 		<button className={cn(styles.button, styles[classNameByType], {[styles.fullWidth]: fullWidth}, className)} {...props}>
-			{!!LeftIcon && <ButtonIcon Icon={LeftIcon}/> }
+			{!!LeftIcon && <LeftIcon/> }
 			<Typography fontWeight={500}>{children}</Typography>
-			{!!RightIcon && <ButtonIcon Icon={RightIcon}/>}
+			{!!RightIcon && <RightIcon/>}
 		</button>
 	)
 }
 
-const ButtonIcon: React.FC<{Icon: IconType}> = memo(({Icon}) => <Icon />)
 
 export default memo(Button)

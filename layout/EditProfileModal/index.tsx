@@ -6,14 +6,20 @@ import Modal from "@/components/Modal"
 import Textarea from "@/components/Textarea"
 import Title from "@/components/Title"
 import Typography from "@/components/Typography"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import styles from "./EditProfileModal.module.css"
 import EditIcon from "@/public/assets/icons/edit.svg"
 
 const EditProfileModal = () => {		
-	const host = window.location.host;
+	const [host, setHost] = useState('')
 
 	const [visible, setVisible] = useState(false)
+
+	useEffect(() => {
+		if (window.location) {
+			setHost(window.location.host)
+		}
+	}, [])
 
 	const onClose = () => {
 		setVisible(false)

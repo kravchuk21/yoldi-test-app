@@ -20,7 +20,7 @@ const DATA = [
 	},
 	{
 		"name": "string",
-		"email": "string",
+		"email": "strings",
 		"slug": "string",
 		"description": "string",
 		"cover": {
@@ -32,7 +32,7 @@ const DATA = [
 	},
 	{
 		"name": "string",
-		"email": "string",
+		"email": "stringw",
 		"slug": "string",
 		"description": "string",
 		"cover": {
@@ -44,7 +44,7 @@ const DATA = [
 	},
 	{
 		"name": "string",
-		"email": "string",
+		"email": "string1",
 		"slug": "string",
 		"description": "string",
 		"cover": {
