@@ -6,12 +6,12 @@ import Title from "@/components/Title"
 import Typography from "@/components/Typography"
 import styles from "@/styles/Profile.module.css"
 import Link from "next/link"
-import EditIcon from "@/public/assets/icons/edit.svg"
 import LogoutIcon from "@/public/assets/icons/logout.svg"
 import ImageIcon from "@/public/assets/icons/image.svg"
 import TrashIcon from "@/public/assets/icons/trash.svg"
 import CameraIcon from "@/public/assets/icons/camera.svg"
 import useHover from "@/hooks/useHover"
+import EditProfileModal from "@/layout/EditProfileModal"
 
 export default function Profile({params}) {
 	return <div>
@@ -25,7 +25,7 @@ export default function Profile({params}) {
 						<Typography>example@gmail.com</Typography>
 					</Link>
 				</div>
-				<Button className={styles.editProfileButton} LeftIcon={EditIcon} buttonType="secondary">Редактировать</Button>
+				<EditProfileModal/>
 			</div>
 			<div className={styles.profileDescription}>
 				<Typography>

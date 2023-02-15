@@ -1,5 +1,5 @@
-import Avatar from "../Avatar"
-import Typography from "../Typography"
+import Avatar from "@/components/Avatar"
+import Typography from "@/components/Typography"
 import styles from "./UserCard.module.css"
 
 interface IUserCard {

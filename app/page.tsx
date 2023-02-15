@@ -1,8 +1,9 @@
 import Title from "@/components/Title"
-import UserCard from "@/components/UserCard"
+import UserCard from "@/layout/UserCard"
 import { Routes } from "@/constants/routes"
 import styles from "@/styles/Home.module.css"
 import Link from "next/link"
+import EditProfileModal from "@/layout/EditProfileModal"
 
 const DATA = [
 	{
@@ -59,6 +60,7 @@ export default function Home() {
 	return (
 		<main className={styles.userListPage}>
 			<Title className={styles.userListTitle}>Список аккаунтов</Title>
+			<EditProfileModal />
 			<ul className={styles.userList}>
 				{DATA.map(user => {
 					return (

@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useCallback} from "react"
 import ReactFocusLock from "react-focus-lock"
 import Portal from "../Portal"
 import styles from "./Modal.module.css"
@@ -10,10 +10,24 @@ interface IModal {
 }
 
 const Modal: React.FC<IModal> = ({children, isOpened, onClose}) => {
+	const escFunction = useCallback((event: KeyboardEvent) => {
+		if (event.key === "Escape") {
+			onClose()
+		}
+	}, []);
+
+	useEffect(() => {
+		document.addEventListener("keydown", escFunction, false);
+
+	    return () => {
+			document.removeEventListener("keydown", escFunction, false);
+		};
+	}, [escFunction]);
+
 	if (!isOpened) {
 		return null
 	}
-	
+		
 	return (
 		<Portal>
 			<ReactFocusLock>

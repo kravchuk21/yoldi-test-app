@@ -1,6 +1,6 @@
 "use client"
 
-import { DetailedHTMLProps, memo, Ref, forwardRef, PropsWithChildren, InputHTMLAttributes, SVGProps } from "react"
+import React, { DetailedHTMLProps, memo, Ref, forwardRef, PropsWithChildren, InputHTMLAttributes, SVGProps } from "react"
 import styles from "./Input.module.css"
 import cn from "classnames"
 

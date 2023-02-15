@@ -1,0 +1,48 @@
+.buttonGroup {
+	display: flex;
+	gap: 10px;
+}
+
+.editFormTitle {
+	margin-bottom: 25px;
+}
+
+.editForm {
+	margin-bottom: 25px;	
+}
+
+.field {
+	margin-bottom: 15px;
+}
+
+.fieldLabel {
+	font-weight: 500;
+	color: var(--gray);
+	margin-bottom: 5px;
+}
+
+.fieldUrl {
+	display: flex;
+}
+
+.fieldUrlLabel {
+	height: 100%;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background: var(--background-secondary);
+	border: 1px solid var(--stroke-primary);
+	border-right: none;
+	height: auto;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.fieldUrlLabel p {
+	color: var(--gray);
+}
+
+.fieldUrlInput {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
